@@ -27,13 +27,13 @@ public class BookDAO {
 				ps.setString(1, searchTitle);
 				ResultSet rs= ps.executeQuery();
 		
-					while(rs!=null && rs.next())
+					/*while(rs!=null && rs.next())
 					{
 						
 						Author a=new Author(rs.getString(4), rs.getString(5));
 						Book b=new Book(rs.getString(1), rs.getString(2), rs.getFloat(3), a);
 						list.add(b);
-					}
+					}*/
 				}
 				catch (SQLException e) 
 				{
